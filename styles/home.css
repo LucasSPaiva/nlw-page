@@ -1,3 +1,7 @@
+#home {
+	padding-block: 7.5rem;
+}
+
 #home .content,
 #home .wrapper {
 	display: flex;
@@ -20,12 +24,6 @@
 	color: var(--brand-primary);
 }
 
-#home .text p {
-	line-height: 150%;
-	font-size: var(--paragraph-size-medium);
-	color: var(--brand-primary-light);
-}
-
 #home .details {
 	padding-block: 4rem;
 	background: var(--black-light);
@@ -42,14 +40,13 @@
 	flex-direction: column;
 	align-items: center;
 
-	font-size: 1.6rem;
-	line-height: 150%;
+	font-size: var(--paragraph-size-small);
 	color: var(--brand-primary-dark);
 }
 
 #home .details p span {
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 4.8rem;
 	line-height: 130%;
 	color: var(--brand-primary);
 }
