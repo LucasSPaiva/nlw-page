@@ -1,0 +1,104 @@
+@import 'about.css';
+@import 'contact.css';
+@import 'depositions.css';
+@import 'footer.css';
+@import 'home.css';
+@import 'navigation.css';
+@import 'services.css';
+
+:root {
+	font-size: 62.5%;
+
+	--title-size-large: 3.5rem;
+	--title-size-medium: 3rem;
+	--title-size-small: 2.4rem;
+	--title-size-tiny: 1.4rem;
+	--paragraph-size-medium: 1.8rem;
+	--paragraph-size-small: 1.6rem;
+
+	--black-dark: #101010;
+	--black-gray: #303030;
+	--black-light: #424242;
+
+	--brand-primary: #ffd700;
+	--brand-primary-dark: #ffb800;
+	--brand-primary-light: #f0e68c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+	overflow: overlay;
+	background-color: var(--black-dark);
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+section {
+	padding: 7.5rem 2.5rem;
+	text-align: center;
+}
+
+.wrapper {
+	max-width: 445px;
+	margin-inline: auto;
+}
+
+/* BUTTON STYLES */
+.button {
+	padding: 1.6rem 3.2rem;
+	margin-inline: auto;
+
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	width: fit-content;
+
+	color: var(--black-dark);
+	border: 1px solid var(--black-dark);
+	background: var(--brand-primary-dark);
+	border-radius: 4rem;
+
+	font-size: var(--title-size-tiny);
+	font-weight: 700;
+	line-height: 1.8rem;
+	text-transform: uppercase;
+
+	transition: 0.3s all;
+}
+
+.button:hover {
+	background: var(--black-dark);
+	border-color: var(--brand-primary-dark);
+	color: var(--brand-primary-dark);
+}
+
+.button:hover svg path {
+	transition: 0.3s all;
+	fill: var(--brand-primary-dark);
+}
+/* ============= */
