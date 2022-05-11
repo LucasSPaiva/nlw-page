@@ -1,0 +1,28 @@
+#about {
+	padding-block: 10rem;
+	background-color: var(--black-gray);
+	overflow: hidden;
+}
+
+
+#about .wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 7rem;
+}
+
+#about .text {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
+#about .swiperAbout {
+	width: 100%;
+	height: 100%;
+}
+
+#about .swiper-slide {
+	height: auto;
+	padding-inline: 0.8rem;
+}

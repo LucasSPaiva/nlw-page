@@ -1,0 +1,33 @@
+#contact .wrapper {
+	padding-block: 10rem;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+#contact .text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 3.2rem;
+	text-align: left;
+}
+
+#contact .text #contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.6rem;
+}
+
+#contact .text #contacts p {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+#contact .text #contacts p img {
+	width: 3rem;
+}
+
+

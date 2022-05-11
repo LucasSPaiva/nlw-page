@@ -5,6 +5,7 @@
 @import 'home.css';
 @import 'navigation.css';
 @import 'services.css';
+@import 'form.css';
 
 :root {
 	font-size: 62.5%;
@@ -98,7 +99,7 @@ section {
 }
 
 .wrapper {
-	max-width: 445px;
+	max-width: 44.5rem;
 	margin-inline: auto;
 }
 

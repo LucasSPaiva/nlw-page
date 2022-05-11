@@ -1,0 +1,68 @@
+#depositions {
+	padding-block: 10rem;
+	overflow: hidden;
+}
+
+#depositions .wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+.content-swiper {
+	height: auto;
+	padding: 3.2rem;
+	background: var(--black-gray);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 2rem;
+
+	border: 1px solid rgba(255, 0, 0, 0);
+	border-radius: 4px;
+}
+
+.swiper-slide.swiper-slide-active .content-swiper {
+	border: 1px solid var(--brand-primary);
+}
+
+.content-swiper #icon-aspas {
+	width: 4.5rem;
+}
+
+.content-swiper p {
+	font-size: 1.6rem;
+	line-height: 150%;
+	text-align: left;
+}
+
+.content-swiper .profile {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.content-swiper .profile #icon-profile {
+	width: 4rem;
+}
+
+/* ============= */
+
+#depositions .swiper {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+#depositions .swiper-slide {
+	height: auto;
+	padding-inline: 0.8rem;
+}
+
+#depositions .swiper-pagination-bullet {
+	width: 0.75rem;
+	height: 0.75rem;
+	background: var(--brand-primary-dark);
+}
