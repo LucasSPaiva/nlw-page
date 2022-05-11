@@ -2,7 +2,6 @@ const swiper = new Swiper('.swiper', {
 	slidesPerView: 1.3,
 	direction: 'horizontal',
 	loop: true,
-	mousewheel: true,
 	keyboard: true,
 	centeredSlides: true,
 	centeredSlidesBounds: true,
@@ -18,7 +17,6 @@ const swiperAbout = new Swiper('.swiperAbout', {
 	direction: 'horizontal',
 	loop: true,
 
-	mousewheel: true,
 	keyboard: true,
 	centeredSlides: true,
 	centeredSlidesBounds: true,
