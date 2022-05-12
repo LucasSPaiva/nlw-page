@@ -1,0 +1,11 @@
+#footer {
+	padding-block: 8rem;
+	background-color: var(--brand-primary-dark);
+}
+
+#footer .text {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	gap: 2.4rem;
+}

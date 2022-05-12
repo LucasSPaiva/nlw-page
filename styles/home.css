@@ -27,7 +27,7 @@
 #home .details {
 	padding-block: 4rem;
 	background: var(--black-light);
-	border: 1px solid #ffd700;
+	border: 1px solid var(--brand-primary);
 	border-radius: 0.6rem;
 
 	display: flex;

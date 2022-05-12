@@ -60,17 +60,37 @@ p {
 	color: var(--brand-primary-light);
 }
 
-/* test */
-p::selection {
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+img::selection,
+span::selection,
+label::selection,
+legend::selection,
+button::selection,
+input::selection,
+textarea::selection {
 	color: var(--black-dark);
 	background-color: var(--brand-primary-light);
 }
-/* test */
 
 h2 {
 	font-weight: 700;
 	font-size: var(--title-size-medium);
 	color: var(--brand-primary);
+}
+
+h2.logo {
+	font-weight: 400;
+	font-size: var(--title-size-large);
+	color: var(--black-dark);
+}
+
+h2.logo span {
+	font-weight: 700;
 }
 
 h3 {
@@ -110,6 +130,7 @@ section {
 
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 1.6rem;
 	width: fit-content;
 
@@ -120,7 +141,6 @@ section {
 
 	font-size: var(--title-size-tiny);
 	font-weight: 700;
-	line-height: 1.8rem;
 	text-transform: uppercase;
 
 	transition: 0.3s all;
