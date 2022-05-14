@@ -128,3 +128,115 @@ body.menu-expanded .menu {
 	border: 1px solid var(--black-dark);
 	color: var(--black-dark);
 }
+
+@media (min-width: 1024px) {
+	nav#navigation * {
+		margin: 0;
+		padding: 0;
+		visibility: initial;
+		display: initial;
+		opacity: initial;
+		flex-direction: initial;
+		position: initial;
+		font-size: initial;
+		font-weight: initial;
+		transform: initial;
+		color: initial;
+		background-color: initial;
+	}
+
+	nav#navigation {
+		display: flex;
+		justify-content: space-around;
+		margin-inline: auto;
+	}
+
+	nav#navigation h2.logo a {
+		font-weight: 400;
+	}
+	nav#navigation h2.logo a span {
+		font-weight: 700;
+	}
+
+	nav#navigation h2.logo a,
+	nav#navigation h2.logo a span {
+		font-size: var(--title-size-medium);
+		color: var(--brand-primary-dark);
+	}
+
+	nav#navigation.scroll h2.logo a,
+	nav#navigation.scroll h2.logo a span {
+		color: var(--black-dark);
+	}
+
+	nav#navigation .toggle-menu {
+		display: none;
+	}
+
+	nav#navigation .menu {
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+	}
+
+	nav#navigation .menu li a {
+		font-weight: bold;
+		font-size: var(--paragraph-size-small);
+		line-height: 2.1rem;
+		color: var(--brand-primary-dark);
+
+		position: relative;
+	}
+
+	nav#navigation .menu li:not(:last-child) a::after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		width: 5px;
+		border-radius: 3px;
+		height: 5px;
+		background-color: var(--brand-primary-dark);
+
+		transition: 0.3s all;
+	}
+
+	nav#navigation .menu li a:hover::after,
+	nav#navigation .menu li a.active::after {
+		left: 4px;
+		width: 90%;
+	}
+
+	nav#navigation.scroll .menu li a::after {
+		background-color: var(--black-dark);
+	}
+
+	nav#navigation.scroll .menu li a:hover::after,
+	nav#navigation.scroll .menu li a.active::after {
+		background-color: var(--black-dark);
+	}
+
+	nav#navigation.scroll .menu li a {
+		color: var(--black-dark);
+	}
+
+	nav#navigation #form-button {
+		padding: 1rem 2.4rem;
+
+		border: 1px solid var(--brand-primary-dark);
+		color: var(--brand-primary-dark);
+		border-radius: 4rem;
+	}
+
+	nav#navigation .menu #form-button:hover,
+	nav#navigation.scroll .menu #form-button {
+		background: var(--brand-primary-dark);
+		border: 1px solid var(--black-dark);
+		color: var(--black-dark);
+	}
+	nav#navigation.scroll .menu #form-button:hover {
+		background: var(--black-dark);
+		border: 1px solid var(--brand-primary-dark);
+		color: var(--brand-primary-dark);
+	}
+}

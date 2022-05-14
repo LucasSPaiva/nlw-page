@@ -1,6 +1,5 @@
 #home {
-	margin-top: 7rem;
-	padding-block: 7.5rem;
+	padding: 15rem 0 7rem;
 }
 
 #home .content,
@@ -9,6 +8,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 6rem;
+}
+
+#home .content img {
+	margin-inline: auto;
+	max-width: 41rem;
 }
 
 #home .text {
@@ -50,4 +54,43 @@
 	font-size: 4.8rem;
 	line-height: 130%;
 	color: var(--brand-primary);
+}
+
+@media (min-width: 700px) {
+	#home .content {
+		max-width: 60rem;
+		margin-inline: auto;
+	}
+}
+
+@media (min-width: 850px) {
+	#home .details {
+		flex-direction: row;
+		justify-content: center;
+		padding-block: 6rem;
+	}
+
+	#home .details p {
+		flex: 1;
+		padding-inline: 2rem;
+	}
+	#home .details p + p {
+		border-left: 1px solid var(--brand-primary);
+	}
+}
+
+@media (min-width: 1024px) {
+	#home .content {
+		max-width: none;
+		align-items: center;
+		flex-direction: row;
+	}
+	#home .text {
+		max-width: 60rem;
+		text-align: left;
+		justify-content: flex-start;
+	}
+	#home .content .button {
+		margin-left: 0;
+	}
 }

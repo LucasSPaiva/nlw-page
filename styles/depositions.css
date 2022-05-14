@@ -64,3 +64,9 @@
 	height: 0.75rem;
 	background: var(--brand-primary-dark);
 }
+
+@media (min-width: 700px) {
+	#depositions .swiper {
+		max-width: 70rem;
+	}
+}

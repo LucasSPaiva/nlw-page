@@ -108,11 +108,6 @@ section {
 	text-align: center;
 }
 
-.wrapper {
-	max-width: var(--max-width);
-	margin-inline: auto;
-}
-
 a::selection,
 p::selection,
 h1::selection,
@@ -130,7 +125,11 @@ textarea::selection {
 	background-color: var(--brand-primary-light);
 }
 
-/* BUTTON STYLES */
+.wrapper {
+	max-width: var(--max-width);
+	margin-inline: auto;
+}
+
 .button {
 	padding: 1.6rem 3.2rem;
 	margin-inline: auto;
@@ -163,4 +162,20 @@ textarea::selection {
 	transition: 0.3s all;
 	fill: var(--brand-primary-dark);
 }
-/* ============= */
+
+/* Scroll */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--brand-primary-dark);
+	border-radius: 20px;
+	border: 2px solid var(--black-gray);
+}
+
+@media (min-width: 600px) {
+	:root {
+		--max-width: 80vw;
+	}
+}

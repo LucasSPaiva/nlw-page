@@ -4,7 +4,6 @@
 	overflow: hidden;
 }
 
-
 #about .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -25,4 +24,30 @@
 #about .swiper-slide {
 	height: auto;
 	padding-inline: 0.8rem;
+}
+
+@media (min-width: 700px) {
+	#about .swiperAbout {
+		max-width: 60rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	#about .swiper-slide {
+		padding-inline: 1rem;
+	}
+
+	#about .text {
+		max-width: 1120px;
+		margin-inline: auto;
+
+		flex-direction: row;
+		gap: 5.6rem;
+	}
+	#about .text .title {
+		flex: 1;
+	}
+	#about .text p {
+		flex: 2;
+	}
 }

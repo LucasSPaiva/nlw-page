@@ -3,6 +3,35 @@ window.addEventListener('scroll', onScroll)
 onScroll()
 function onScroll() {
 	showNavigationOnScroll()
+
+	activateMenuAtCurrentSection(home)
+	activateMenuAtCurrentSection(services)
+	activateMenuAtCurrentSection(depositions)
+	activateMenuAtCurrentSection(about)
+	activateMenuAtCurrentSection(contact)
+}
+
+function activateMenuAtCurrentSection(section) {
+	const targetLine = scrollY + innerHeight / 2
+
+	const sectionTop = section.offsetTop
+	const sectionHeight = section.offsetHeight
+	const sectionEndsAt = sectionTop + sectionHeight
+
+	const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
+	const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
+
+	const sectionBoundaries =
+		sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
+
+	const sectionId = section.getAttribute('id')
+
+	const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
+
+	menuElement.classList.remove('active')
+	if (sectionBoundaries) {
+		menuElement.classList.add('active')
+	}
 }
 
 function showNavigationOnScroll() {
@@ -36,7 +65,7 @@ const swiper = new Swiper('.swiper', {
 })
 
 const swiperAbout = new Swiper('.swiperAbout', {
-	slidesPerView: 1.2,
+	slidesPerView: 1.3,
 	direction: 'horizontal',
 	loop: true,
 
