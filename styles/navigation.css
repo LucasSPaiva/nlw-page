@@ -1,3 +1,130 @@
-#navigation {
-	background-color: var(--brand-primary-dark);
+nav {
+	background-color: var(--black-dark);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	width: 100vw;
+	height: 7.2rem;
+	padding-inline: 2.5rem;
+	margin-inline: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	transition: all 0.3s;
+}
+
+nav h2 {
+	font-size: var(--title-size-medium);
+}
+
+nav h2 a {
+	color: var(--brand-primary-dark);
+}
+
+nav button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.menu,
+.close-menu {
+	position: absolute;
+}
+
+/* On scroll */
+
+nav.scroll {
+	background: var(--brand-primary-dark);
+}
+
+nav.scroll button path {
+	stroke: var(--black-dark);
+}
+nav.scroll h2 a {
+	color: var(--black-dark);
+}
+
+/* Menu expanded */
+
+body.menu-expanded {
+	overflow: hidden;
+}
+
+body.menu-expanded nav {
+	background: var(--brand-primary-dark);
+}
+
+body.menu-expanded h2 a {
+	color: var(--black-dark);
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+	opacity: 1;
+	visibility: visible;
+	position: relative;
+}
+
+.menu {
+	transform: translateX(100%);
+}
+
+body.menu-expanded .menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: var(--brand-primary-dark);
+
+	width: 100vw;
+	height: 100vh;
+
+	padding-top: 6rem;
+
+	transition: transform 300ms;
+	transform: translateX(0);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4.8rem;
+
+	font-weight: 700;
+	font-size: var(--title-size-small);
+	line-height: 3.1rem;
+
+	margin-block: 6rem;
+}
+
+.menu #form-button {
+	background: var(--black-dark);
+	border: 1px solid var(--brand-primary-dark);
+	color: var(--brand-primary-dark);
+	border-radius: 4rem;
+	font-weight: bold;
+	font-size: var(--paragraph-size-small);
+	text-transform: uppercase;
+	text-decoration: none;
+
+	display: inline-block;
+	padding: 1.2rem 3.2rem;
+	transition: 0.3s all;
+}
+
+.menu #form-button:hover {
+	background: var(--brand-primary-dark);
+	border: 1px solid var(--black-dark);
+	color: var(--black-dark);
 }

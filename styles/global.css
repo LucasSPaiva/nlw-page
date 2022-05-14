@@ -24,6 +24,8 @@
 	--brand-primary: #ffd700;
 	--brand-primary-dark: #ffb800;
 	--brand-primary-light: #f0e68c;
+
+	--max-width: 44.5rem;
 }
 
 * {
@@ -32,14 +34,14 @@
 	box-sizing: border-box;
 }
 
-html,
+html {
+	scroll-behavior: smooth;
+	width: 100vw;
+}
+
 body {
 	width: 100%;
 	height: 100%;
-}
-
-html {
-	scroll-behavior: smooth;
 }
 
 body {
@@ -49,32 +51,20 @@ body {
 	background-color: var(--black-dark);
 }
 
+ul {
+	list-style: none;
+}
+
 a {
 	text-decoration: none;
 	display: inline-block;
+	color: initial;
 }
 
 p {
 	line-height: 150%;
 	font-size: var(--paragraph-size-medium);
 	color: var(--brand-primary-light);
-}
-
-a::selection,
-p::selection,
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-img::selection,
-span::selection,
-label::selection,
-legend::selection,
-button::selection,
-input::selection,
-textarea::selection {
-	color: var(--black-dark);
-	background-color: var(--brand-primary-light);
 }
 
 h2 {
@@ -119,8 +109,25 @@ section {
 }
 
 .wrapper {
-	max-width: 44.5rem;
+	max-width: var(--max-width);
 	margin-inline: auto;
+}
+
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+img::selection,
+span::selection,
+label::selection,
+legend::selection,
+button::selection,
+input::selection,
+textarea::selection {
+	color: var(--black-dark);
+	background-color: var(--brand-primary-light);
 }
 
 /* BUTTON STYLES */

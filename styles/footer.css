@@ -4,8 +4,16 @@
 }
 
 #footer .text {
-	text-align: start;
+	margin-inline: auto;
+
 	display: flex;
 	flex-direction: column;
+	text-align: left;
 	gap: 2.4rem;
+
+	max-width: var(--max-width);
+}
+
+#footer .text p {
+	color: var(--black-light);
 }

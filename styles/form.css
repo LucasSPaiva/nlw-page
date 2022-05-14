@@ -10,6 +10,8 @@ form {
 	display: flex;
 	flex-direction: column;
 	gap: 3.2rem;
+
+	box-shadow: 0 0px 15px -10px rgba(255, 217, 0, 0.548);
 }
 
 legend {
@@ -49,7 +51,7 @@ label {
 }
 
 input {
-	font-size: 14px;
+	font-size: var(--title-size-tiny);
 	color: var(--brand-primary);
 }
 
@@ -62,6 +64,7 @@ input {
 
 .input-wrapper input {
 	height: 3rem;
+	width: 100%;
 	padding: 1rem;
 
 	background: var(--black-dark);
@@ -74,7 +77,7 @@ input:invalid,
 select:invalid,
 textarea:invalid {
 	background: var(--black-dark);
-	border: 1px solid rgba(245, 84, 84, 0.685);
+	border: 1px solid rgba(245, 84, 84, 0.429);
 }
 
 textarea {
@@ -92,7 +95,7 @@ textarea {
 
 	padding: 0.5rem 1rem;
 
-	font-size: 1.4rem;
+	font-size: var(--title-size-tiny);
 	line-height: 2.4rem;
 	color: var(--brand-primary);
 }

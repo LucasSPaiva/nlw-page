@@ -34,6 +34,7 @@
 #services .cards {
 	display: grid;
 	gap: 3.2rem;
+	cursor: default;
 }
 
 #services .cards .card {
@@ -49,6 +50,12 @@
 
 	border: 1px solid var(--brand-primary-dark);
 	border-radius: 0.6rem;
+	box-shadow: 0 0px 2px 1px rgba(255, 215, 0, 0.42);
+	transition: 0.3s all;
+}
+
+#services .cards .card:hover {
+	box-shadow: 0 0px 10px -1px rgb(255, 217, 0);
 }
 
 #services .cards img {
@@ -58,4 +65,26 @@
 
 #services .cards p {
 	font-size: var(--paragraph-size-small);
+}
+
+@media (min-width: 700px) {
+	#services .text {
+		max-width: var(--max-width);
+	}
+	#services .wrapper {
+		max-width: 1024px;
+	}
+
+	#services .cards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1024px) {
+	#services .wrapper {
+		max-width: 1280px;
+	}
+	#services .cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
