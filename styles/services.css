@@ -2,13 +2,13 @@
 	background: var(--black-gray);
 	position: relative;
 
-	padding-bottom: 10rem;
+	padding: 7rem 0 10rem;
 }
 
 #services::before {
 	content: '';
 	position: absolute;
-	top: -315px;
+	top: -240px;
 	left: 0;
 	z-index: -1;
 	width: 100%;
@@ -82,7 +82,7 @@
 
 @media (min-width: 850px) {
 	#services::before {
-		top: -185px;
+		top: -110px;
 	}
 }
 

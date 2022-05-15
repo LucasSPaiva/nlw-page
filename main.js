@@ -65,7 +65,7 @@ const swiper = new Swiper('.swiper', {
 })
 
 const swiperAbout = new Swiper('.swiperAbout', {
-	slidesPerView: 1.3,
+	slidesPerView: 3,
 	direction: 'horizontal',
 	loop: true,
 

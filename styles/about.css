@@ -26,10 +26,8 @@
 	padding-inline: 0.8rem;
 }
 
-@media (min-width: 700px) {
-	#about .swiperAbout {
-		max-width: 60rem;
-	}
+#about .swiperAbout .swiper-slide img {
+	max-width: 50rem;
 }
 
 @media (min-width: 1024px) {
