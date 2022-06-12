@@ -1,6 +1,7 @@
 window.addEventListener('scroll', onScroll)
 
 onScroll()
+
 function onScroll() {
 	showNavigationOnScroll()
 
@@ -35,6 +36,7 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavigationOnScroll() {
+	const navigation = document.querySelector('#navigation')
 	if (scrollY > 0) {
 		navigation.classList.add('scroll')
 	} else {
